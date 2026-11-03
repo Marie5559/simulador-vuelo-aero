@@ -11,6 +11,11 @@ Este repositorio contiene un simulador computacional desarrollado en Python para
 * Visualizar el perfil de la misión mediante una proyección espacial 3D de los waypoints de navegación.
 * Asegurar la viabilidad de la simulación mediante un sistema de validación que bloquea altitudes negativas y errores de formato.
 
+**Herramientas Implementadas**
+- **Python:** Lógica central y manejo preventivo de errores.
+- **NumPy:** Computación vectorizada y análisis matemático.
+- **Matplotlib:** Renderizado de trayectorias aeronáuticas en 3D.
+
 ## Instalación y Ejecución
 El proyecto está diseñado para ejecutarse en un entorno interactivo.
 1. Abrir el archivo `.ipynb` en Google Colab.
