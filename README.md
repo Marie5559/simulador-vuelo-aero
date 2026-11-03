@@ -16,3 +16,17 @@ Este repositorio contiene un simulador computacional desarrollado en Python para
 * Python (lógica central y manejo preventivo de errores).
 * NumPy (Computación vectorizada y análisis matemático).
 * Matplotlib (Renderizado de trayectorias aeronáuticas en 3D).
+# Simulador de Vuelo: Optimización de Ruta MSLP - MSSS
+
+Este repositorio contiene el código fuente de un simulador aeronáutico desarrollado en Python para el análisis cinemático y termodinámico de un Boeing 737-800.
+
+## Instalación y Ejecución
+El proyecto está diseñado para ejecutarse en un entorno interactivo.
+1. Abrir el archivo `.ipynb` en Google Colab.
+2. Las dependencias requeridas (`numpy`, `matplotlib`) están preinstaladas en el entorno de Colab (ver `requirements.txt`).
+3. Ejecutar la celda de código seleccionando `Entorno de ejecución > Ejecutar todo`.
+
+## Casos de Prueba y Manejo de Errores
+El algoritmo incluye un bloque de validación para casos frontera:
+* **Ejecución normal:** La matriz con 5 waypoints oficiales procesará la distancia con Haversine y generará el perfil de elevación 3D.
+* **Prueba de estrés (Altitudes negativas):** Si se modifica la altitud inicial de MSLP (101 ft) a un valor negativo (ej. -10 ft), el sistema bloquea el procesamiento matemático y emite una alerta de violación física por riesgo de colisión contra el terreno.
